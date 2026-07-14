@@ -10,18 +10,18 @@
    ============================================================ */
 
 const PHOTOS = [
-  { file: "Photo_00001.jpg", category: "Nature", caption: "Landing over beach" },
-  { file: "Photo_00002.jpg", category: "Landscape", caption: "No peeing, please" },
-  { file: "Photo_00003.jpg", category: "Street", caption: "Drowned" },
-  { file: "Photo_00004.jpg", category: "Street", caption: "Journey complete" },
-  { file: "Photo_00005.jpg", category: "Nature", caption: "Tracks in sand" },
-  { file: "Photo_00006.jpg", category: "Landscape", caption: "Supping through the capital" },
-  { file: "Photo_00007.jpg", category: "Detail", caption: "Icy way to work" },
-  { file: "Photo_00008.jpg", category: "Landscape", caption: "Cold snap, black ice" },
-  { file: "Photo_00009.jpg", category: "Street", caption: "Stickers" },
-  { file: "Photo_00010.jpg", category: "Travel", caption: "Reflection" },
-  { file: "Photo_00011.jpg", category: "Landscape", caption: "End of times sunset" },
-  { file: "Photo_00012.jpg", category: "Street", caption: "Friendly chat" },
+  { file: "Photo_00001.jpg", category: "Nature", caption: "Found Wally. Just kidding, it's a fire hydrant" },
+  { file: "Photo_00002.jpg", category: "Landscape", caption: "A very serious portrait of a very unserious moment" },
+  { file: "Photo_00003.jpg", category: "Street", caption: "Squirrel mid-heist" },
+  { file: "Photo_00004.jpg", category: "Street", caption: "10/10 lighting, 2/10 my hair" },
+  { file: "Photo_00005.jpg", category: "Nature", caption: "My own foot, unintentionally" },
+  { file: "Photo_00006.jpg", category: "Landscape", caption: "Grabbed this shot mid-sprint to catch the bus" },
+  { file: "Photo_00007.jpg", category: "Detail", caption: "Cloud that looked like a burrito, gone within seconds" },
+  { file: "Photo_00008.jpg", category: "Landscape", caption: "Accidentally artistic blur" },
+  { file: "Photo_00009.jpg", category: "Street", caption: "Traffic cone standing proud" },
+  { file: "Photo_00010.jpg", category: "Travel", caption: "This napkin holder is more photogenic than me" },
+  { file: "Photo_00011.jpg", category: "Landscape", caption: "This is what main character energy looks like" },
+  { file: "Photo_00012.jpg", category: "Street", caption: "The last fry, a still life" },
   { file: "Photo_00013.jpg", category: "Nature", caption: "This is my Mona Lisa of parking cones" },
   { file: "Photo_00014.jpg", category: "Travel", caption: "Left my thumbprint on the lens, still fire" },
   { file: "Photo_00015.jpg", category: "Street", caption: "Someone's forgotten umbrella, a tragic hero" },
@@ -298,7 +298,7 @@ function buildFrame(photo, number){
   frame.dataset.index = number;
 
   frame.innerHTML = `
-    <img src="images/${photo.file}" alt="${photo.caption}" loading="lazy">
+    <img src="images/${photo.file}" alt="${photo.caption}" loading="lazy" decoding="async">
     <div class="frame-marks">
       <span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
     </div>
