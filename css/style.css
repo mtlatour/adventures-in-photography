@@ -261,9 +261,6 @@ h1,h2,h3{
   cursor:pointer;
   break-inside:avoid;
   margin-bottom:3px;
-  /* skip layout/paint work for offscreen frames — big win on long galleries */
-  content-visibility:auto;
-  contain-intrinsic-size:800px 800px;
 }
 /* hover-only chrome doesn't translate well to touch — keep it hidden there
    instead of letting it get stuck "on" after a tap */
