@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Adventures in Photography</title>
+<meta name="description" content="The full collection, sorted by category.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" style="mix-blend-mode:normal; background:var(--panel);">
+  <a href="index.html" class="nav-brand">Adventures in Photography</a>
+  <button class="nav-toggle" aria-expanded="false">Menu</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<main>
+  <header class="wrap page-header">
+    <p class="eyebrow reveal"><span class="dot">●</span> The full collection</p>
+    <h1 class="reveal">Gallery</h1>
+    <p class="reveal">Every frame below was shot on a phone. Click any frame for a closer look.</p>
+  </header>
+
+  <div class="wrap-wide gallery-spacer">
+    <div class="sheet-grid" data-gallery-grid></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-row">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mailto:hello@example.com">Email</a></li>
+    </ul>
+  </div>
+  <div class="footer-meta">
+    <span>© <span id="year"></span> Adventures in Photography. All photographs are original work — for usage or licensing, contact <a href="mailto:marclatour@live.com">marclatour@live.com</a>.</span>
+  </div>
+</footer>
+
+<div class="lightbox">
+  <button class="lightbox-close">Close ✕</button>
+  <button class="lightbox-prev" aria-label="Previous">‹</button>
+  <button class="lightbox-next" aria-label="Next">›</button>
+  <div class="lightbox-inner">
+    <div class="lightbox-frame">
+      <img src="" alt="">
+    </div>
+    <div class="lightbox-meta">
+      <span class="lightbox-no no"></span>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

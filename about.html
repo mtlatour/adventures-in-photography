@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Adventures in Photography</title>
+<meta name="description" content="On phone photography and paying attention.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" style="mix-blend-mode:normal; background:var(--panel);">
+  <a href="index.html" class="nav-brand">Adventures in Photography</a>
+  <button class="nav-toggle" aria-expanded="false">Menu</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html" aria-current="page">About</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="wrap about-hero">
+    <h1 class="reveal">Hi, I'm Marc — I take pictures on my phone.</h1>
+    <p class="lede reveal">Not because it's trendy, but because it's the camera I always have. Everything on this site was shot, and mostly edited, on a phone screen.</p>
+  </section>
+
+  <section class="wrap about-body">
+    <div class="label">Philosophy</div>
+    <div class="content">
+      <p>I started paying closer attention to light and framing long before I owned anything you'd call "real" camera equipment. The phone in my pocket turned out to be enough — it's always there, it's quick, and it disappears into the moment instead of getting in the way of it.</p>
+      <p>What I care about is composition: where the eye lands first, what's left out of frame, how a shadow or a reflection changes a plain scene into something worth a second look. Equipment can help, but it was never the thing holding the pictures back.</p>
+      <p>This site is a growing collection of those moments, loosely grouped so you can browse by mood rather than by date.</p>
+    </div>
+  </section>
+
+  <section class="wrap about-body">
+    <div class="label">What I shoot with</div>
+    <div class="content">
+      <ul class="kit-list">
+        <li><span>Camera</span><span>Whatever phone is in my pocket</span></li>
+        <li><span>Editing</span><span>Built-in phone editing tools</span></li>
+        <li><span>Approach</span><span>Available light, no staging</span></li>
+        <li><span>Philosophy</span><span>Attention over equipment</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap about-body">
+    <div class="label">Copyright &amp; usage</div>
+    <div class="content">
+      <p>All photographs displayed on this website are original works created by me and are protected under copyright law. Copyright is retained by me in all cases, and no image may be copied, reproduced, distributed, modified, or used in any form — commercial or otherwise — without prior written permission.</p>
+      <p>If you're interested in licensing, purchasing, or otherwise using any photograph on this site, please get in touch at <a href="mailto:marclatour@live.com">marclatour@live.com</a> and I'm happy to discuss it.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-row">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="mailto:hello@example.com">Email</a></li>
+    </ul>
+  </div>
+  <div class="footer-meta">
+    <span>© <span id="year"></span> Adventures in Photography. All photographs are original work — for usage or licensing, contact <a href="mailto:marclatour@live.com">marclatour@live.com</a>.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
